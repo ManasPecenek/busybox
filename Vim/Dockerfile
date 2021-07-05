@@ -8,7 +8,7 @@ RUN wget http://mirror.centos.org/centos/8/BaseOS/x86_64/os/Packages/libacl-2.2.
 
 RUN wget http://mirror.centos.org/centos/8/BaseOS/x86_64/os/Packages/glibc-common-2.28-151.el8.x86_64.rpm
 
-RUN wget http://mirror.centos.org/centos/8/BaseOS/x86_64/os/Packages/glibc-all-langpacks-2.28-151.el8.x86_64.rpm
+RUN wget http://mirror.centos.org/centos/8/BaseOS/aarch64/os/Packages/glibc-langpack-en-2.28-151.el8.aarch64.rpm
 
 RUN wget http://mirror.centos.org/centos/8/BaseOS/x86_64/os/Packages/glibc-2.28-151.el8.x86_64.rpm
 
@@ -35,7 +35,7 @@ RUN wget http://mirror.centos.org/centos/8/AppStream/x86_64/os/Packages/vim-enha
 RUN rpm -i libattr-2.4.48-3.el8.x86_64.rpm && \
 rpm -i libacl-2.2.53-1.el8.x86_64.rpm && \
 rpm -i glibc-common-2.28-151.el8.x86_64.rpm && \
-rpm -i glibc-all-langpacks-2.28-151.el8.x86_64.rpm && \
+rpm -i glibc-langpack-en-2.28-151.el8.aarch64.rpm && \
 rpm -i glibc-2.28-151.el8.x86_64.rpm && \
 rpm -i gpm-libs-1.20.7-17.el8.x86_64.rpm && \
 rpm -i pcre2-10.32-2.el8.x86_64.rpm && \
