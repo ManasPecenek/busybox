@@ -3,33 +3,19 @@ FROM busybox:1.33.1
 WORKDIR /home
 
 RUN wget http://mirror.centos.org/centos/8/BaseOS/x86_64/os/Packages/libattr-2.4.48-3.el8.x86_64.rpm
-
 RUN wget http://mirror.centos.org/centos/8/BaseOS/x86_64/os/Packages/libacl-2.2.53-1.el8.x86_64.rpm
-
 RUN wget http://mirror.centos.org/centos/8/BaseOS/x86_64/os/Packages/glibc-common-2.28-151.el8.x86_64.rpm
-
 RUN wget http://mirror.centos.org/centos/8/BaseOS/aarch64/os/Packages/glibc-langpack-en-2.28-151.el8.aarch64.rpm
-
 RUN wget http://mirror.centos.org/centos/8/BaseOS/x86_64/os/Packages/glibc-2.28-151.el8.x86_64.rpm
-
 RUN wget http://mirror.centos.org/centos/8/AppStream/x86_64/os/Packages/gpm-libs-1.20.7-17.el8.x86_64.rpm
-
 RUN wget http://mirror.centos.org/centos/8/BaseOS/x86_64/os/Packages/pcre2-10.32-2.el8.x86_64.rpm
-
 RUN wget http://mirror.centos.org/centos/8/BaseOS/x86_64/os/Packages/libsepol-2.9-2.el8.x86_64.rpm
-
 RUN wget http://mirror.centos.org/centos/8/BaseOS/x86_64/os/Packages/libselinux-2.9-5.el8.x86_64.rpm
-
 RUN wget http://mirror.centos.org/centos/8/BaseOS/x86_64/os/Packages/ncurses-base-6.1-7.20180224.el8.noarch.rpm
-
 RUN wget http://mirror.centos.org/centos/8/BaseOS/x86_64/os/Packages/ncurses-libs-6.1-7.20180224.el8.x86_64.rpm
-
 RUN wget http://mirror.centos.org/centos/8/AppStream/x86_64/os/Packages/vim-filesystem-8.0.1763-15.el8.noarch.rpm
-
 RUN wget http://mirror.centos.org/centos/8/AppStream/x86_64/os/Packages/vim-common-8.0.1763-15.el8.x86_64.rpm
-
 RUN wget http://mirror.centos.org/centos/8/BaseOS/x86_64/os/Packages/which-2.21-12.el8.x86_64.rpm
-
 RUN wget http://mirror.centos.org/centos/8/AppStream/x86_64/os/Packages/vim-enhanced-8.0.1763-15.el8.x86_64.rpm
 
 RUN rpm -i libattr-2.4.48-3.el8.x86_64.rpm && \
