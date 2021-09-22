@@ -42,3 +42,4 @@ wget http://mirror.centos.org/centos/7/os/x86_64/Packages/curl-7.29.0-59.el7.x86
 rpm -i curl-7.29.0-59.el7.x86_64.rpm && \
 rm -rf ./*.rpm
 
+CMD ["sh"]
