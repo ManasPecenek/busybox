@@ -4,8 +4,8 @@ RUN apk update && apk add curl
 
 FROM busybox:1.33.1
 
-COPY --from=builder /bin/sh /bin/sh
 COPY --from=builder /lib /lib
-COPY --from=builder /usr /usr
+COPY --from=builder /usr/lib /usr/lib
+COPY --from=builder /usr/bin /usr/bin
 
 CMD [ "/bin/sh" ]
